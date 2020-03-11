@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage("Linting Django views") {
             steps {
-                sh "pylint cash_flow/cscf/views.py"
+                sh "pycodestyle cash_flow/cscf/views.py"
             }
         }
         stage("Building image") {
