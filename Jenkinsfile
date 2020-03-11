@@ -1,12 +1,15 @@
 pipeline {
+    environment {
+        registry = "adespotakis/capstone"
+        registryCredential = 'dockerhub'
+    }
     agent any
     stages {
-        stage('Build') {
+        stage('Building image') {
             steps {
-                sh 'echo "Hello World"'
-                sh '''echo "Multiline shell steps work too"
-                      ls - lah
-                   '''
+                script {
+                    docker.build registry + ":$BUILD_NUMBER"
+                }
             }
         }
     }
