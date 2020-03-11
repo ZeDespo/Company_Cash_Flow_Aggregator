@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage("Linting Django views") {
             steps {
-                sh "pycodestyle cash_flow/cscf/views.py"
+                sh "pycodestyle cash_flow/cscf/views.py --max-line-length 140"
             }
         }
         stage("Building image") {
