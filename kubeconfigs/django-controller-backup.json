@@ -2,26 +2,26 @@
    "kind": "ReplicationController",
    "apiVersion": "v1",
    "metadata": {
-      "name": "django-app",
+      "name": "django-app-bak",
       "labels": {
-         "app": "django-app"
+         "app": "django-app-bak"
       }
    },
    "spec": {
       "replicas": 1,
       "selector": {
-         "app": "django-app"
+         "app": "django-app-bak"
       },
       "template": {
          "metadata": {
             "labels": {
-               "app": "django-app"
+               "app": "django-app-bak"
             }
          },
          "spec": {
             "containers": [
                {
-                  "name": "django-app",
+                  "name": "django-app-bak",
                   "image": "adespotakis/capstone",
                   "ports": [
                      {

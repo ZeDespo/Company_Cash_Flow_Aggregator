@@ -2,9 +2,9 @@
    "kind": "Service",
    "apiVersion": "v1",
    "metadata": {
-      "name": "django_controller",
+      "name": "django-controller",
       "labels": {
-         "app": "django_controller"
+         "app": "django-controller"
       }
    },
    "spec": {
@@ -15,7 +15,7 @@
          }
       ],
       "selector": {
-         "app": "django_app"
+         "app": "django-app"
       },
       "type": "LoadBalancer"
    }

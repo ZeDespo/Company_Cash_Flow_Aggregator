@@ -31,15 +31,5 @@ pipeline {
                 sh "docker rmi $registry:$BUILD_NUMBER"
             }
         }
-        stage("Deploy Django Application") {
-            steps {
-                sh "kubectl apply -f ./kubeconfigs/django-controller.json"
-            }
-        }
-        stage("Deploy Load Balancer") {
-            steps {
-                sh "kubectl apply -f ./kubeconfigs/load-balancer-service.json"
-            }
-        }
     }
 }
