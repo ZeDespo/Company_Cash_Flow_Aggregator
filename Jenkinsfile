@@ -5,7 +5,12 @@ pipeline {
     }
     agent any
     stages {
-        stage('Building image') {
+        stage("Linting Django views") {
+            steps {
+                sh "pylint cash_flow/cscf/views.py"
+            }
+        }
+        stage("Building image") {
             steps {
                 script {
                     dockerImage = docker.build registry + ":$BUILD_NUMBER"
