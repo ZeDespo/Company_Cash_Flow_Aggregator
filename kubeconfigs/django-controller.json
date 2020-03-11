@@ -1,0 +1,37 @@
+{
+   "kind": "ReplicationController",
+   "apiVersion": "v1",
+   "metadata": {
+      "name": "django_app",
+      "labels": {
+         "app": "django_app"
+      }
+   },
+   "spec": {
+      "replicas": 1,
+      "selector": {
+         "app": "django_app"
+      },
+      "template": {
+         "metadata": {
+            "labels": {
+               "app": "django_app"
+            }
+         },
+         "spec": {
+            "containers": [
+               {
+                  "name": "django_app",
+                  "image": "adespotakis/capstone",
+                  "ports": [
+                     {
+                        "name": "http-server",
+                        "containerPort": 80
+                     }
+                  ]
+               }
+            ]
+         }
+      }
+   }
+}

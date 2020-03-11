@@ -1,0 +1,22 @@
+{
+   "kind": "Service",
+   "apiVersion": "v1",
+   "metadata": {
+      "name": "django_controller",
+      "labels": {
+         "app": "django_controller"
+      }
+   },
+   "spec": {
+      "ports": [
+        {
+           "port": 8000,
+           "targetPort": 80
+         }
+      ],
+      "selector": {
+         "app": "django_app"
+      },
+      "type": "LoadBalancer"
+   }
+}
