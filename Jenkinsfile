@@ -8,8 +8,22 @@ pipeline {
         stage('Building image') {
             steps {
                 script {
-                    docker.build registry + ":$BUILD_NUMBER"
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
                 }
+            }
+        }
+        stage("Pushing image") {
+            steps {
+                script {
+                    docker.withRegistry( '', regsistryCredential ) {
+                        dockerImage.push()
+                    }
+                }
+            }
+        }
+        stage("Remove local docker image") {
+            steps {
+                sh "docker rmi $registry:$BUILD_NUMBER"
             }
         }
     }
