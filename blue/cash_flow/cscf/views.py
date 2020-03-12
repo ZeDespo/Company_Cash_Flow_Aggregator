@@ -89,6 +89,7 @@ def detailed_company_view(request: HttpRequest) -> JsonResponse:
         response['error'] = '{} does not exist within the database.'.format(stock_symbol)
     return JsonResponse(response)
 
+
 def list_all_companies(request: HttpRequest) -> JsonResponse:
     """
     Return all of the companies in the database.
