@@ -8,19 +8,5 @@ Cash Flows, parses it, and commits the changes to the database. This repository 
 
 ### How to use
 
-- Install pipenv: `pip3 install pipenv`
-- Open a terminal and navigate to the first "cash_flows" directory. 
-- Perform the following commands to launch and configure the virtual environment and create the database for the 
-project: 
-```
-pipenv shell
-pipenv lock
-pipenv sync
-python cash_flows/manage.py makemigrations
-python cash_flows/manage.py migrate
-```
-- Run the server by using: `python cash_flows/manage.py runserver`
-- Make calls to the API (http://localhost:8000) to test the functionality
-    - Please read the docstrings for each view to understand input and output for each endpoint. 
-- [Optional] if you would like to test the project within Django, you can do so by running
- `python cash_flows/manage.py test cscf`
+It's as simple as running `docker build -t django_app .` and then running `docker run -p 8000:8000 django_app`.
+The name "django_app" can be replaced with whatever name you so choose. 
