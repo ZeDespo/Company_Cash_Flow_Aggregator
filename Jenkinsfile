@@ -1,6 +1,7 @@
 pipeline {
     environment {
-        registry = "adespotakis/capstone"
+        registryBlue = "adespotakis/capstone"
+        registryGreen = "adespotakis/capstone-backup"
         registryCredential = 'dockerhub'
     }
     agent any
@@ -10,25 +11,28 @@ pipeline {
                 sh "pycodestyle cash_flow/cscf/views.py --max-line-length 140"
             }
         }
-        stage("Building image") {
+        stage("Building blue and green images") {
             steps {
                 script {
-                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                    dockerImageBlue = docker.build registryBlue + ":$BUILD_NUMBER"
+                    dockerImageGreen = docker.build registryGreen + ":$BUILD_NUMBER"
                 }
             }
         }
-        stage("Pushing image") {
+        stage("Pushing images") {
             steps {
                 script {
                     docker.withRegistry( '', registryCredential ) {
-                        dockerImage.push()
+                        dockerImageBlue.push()
+                        dockerImageGreen.push()
                     }
                 }
             }
         }
-        stage("Remove local docker image") {
+        stage("Remove local docker images") {
             steps {
-                sh "docker rmi $registry:$BUILD_NUMBER"
+                sh "docker rmi $registryBlue:$BUILD_NUMBER"
+                sh "docker rmi $registryGreen:$BUILD_NUMBER"
             }
         }
     }

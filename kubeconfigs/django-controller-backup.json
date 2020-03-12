@@ -22,7 +22,7 @@
             "containers": [
                {
                   "name": "django-app-bak",
-                  "image": "adespotakis/capstone",
+                  "image": "adespotakis/capstone-backup",
                   "ports": [
                      {
                         "name": "http-server",
