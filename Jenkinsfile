@@ -15,8 +15,8 @@ pipeline {
         stage("Building blue and green images") {
             steps {
                 script {
-                    dockerImageBlue = docker.build("blue/" + registryBlue + ":$BUILD_NUMBER")
-                    dockerImageGreen = docker.build("green/" + registryGreen + ":$BUILD_NUMBER")
+                    dockerImageBlue = docker.build(registryBlue + ":$BUILD_NUMBER", "blue/")
+                    dockerImageGreen = docker.build(registryGreen + ":$BUILD_NUMBER", "green/")
                 }
             }
         }
