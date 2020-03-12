@@ -8,14 +8,15 @@ pipeline {
     stages {
         stage("Linting Django views") {
             steps {
-                sh "pycodestyle cash_flow/cscf/views.py --max-line-length 140"
+                sh "pycodestyle blue/cash_flow/cscf/views.py --max-line-length 140"
+                sh "pycodestyle green/cash_flow/cscf/views.py --max-line-length 140"
             }
         }
         stage("Building blue and green images") {
             steps {
                 script {
-                    dockerImageBlue = docker.build registryBlue + ":$BUILD_NUMBER"
-                    dockerImageGreen = docker.build registryGreen + ":$BUILD_NUMBER"
+                    dockerImageBlue = docker.build("blue/" + registryBlue + ":$BUILD_NUMBER")
+                    dockerImageGreen = docker.build("green/" + registryGreen + ":$BUILD_NUMBER")
                 }
             }
         }

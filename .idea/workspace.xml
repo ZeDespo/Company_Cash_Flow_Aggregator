@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b96c12e-3676-4b09-802f-d2ec1a82c21b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blue/cash_flow/cash_flow/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/.env.dev" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cash_flow/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cash_flow/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cash_flow/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cash_flow/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cash_flow/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/migrations/0002_cashflowdata_is_header.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/migrations/0003_auto_20200203_0623.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/cscf/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entrypoint.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubeconfigs/django-controller-backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/kubeconfigs/django-controller-backup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +25,7 @@
           <entry key="Dockerfile" value="1" />
           <entry key="Jenkinsfile" value="2" />
           <entry key="json" value="3" />
+          <entry key="md" value="1" />
           <entry key="py" value="7" />
           <entry key="sh" value="2" />
         </counts>
@@ -57,24 +35,27 @@
           <entry key="Bash" value="2" />
           <entry key="Dockerfile" value="1" />
           <entry key="JSON" value="3" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Jenkinsfile" value="852" />
+          <entry key="Jenkinsfile" value="1052" />
           <entry key="json" value="223" />
+          <entry key="md" value="657" />
           <entry key="py" value="193" />
           <entry key="sh" value="13" />
-          <entry key="txt" value="374" />
+          <entry key="txt" value="418" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="13" />
           <entry key="JSON" value="223" />
-          <entry key="PLAIN_TEXT" value="1226" />
+          <entry key="Markdown" value="657" />
+          <entry key="PLAIN_TEXT" value="1470" />
           <entry key="Python" value="193" />
         </counts>
       </usages-collector>
@@ -85,8 +66,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="592">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="108">
+                <caret line="6" column="93" selection-start-line="6" selection-start-column="93" selection-end-line="6" selection-end-column="93" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -174,15 +167,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kubeconfigs/django-controller-backup.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="12" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -195,6 +179,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>django_app</find>
+      <find>registry</find>
     </findStrings>
     <replaceStrings>
       <replace>django-app</replace>
@@ -217,6 +202,7 @@
         <option value="$PROJECT_DIR$/blue/cash_flow/cash_flow/urls.py" />
         <option value="$PROJECT_DIR$/green/cash_flow/cscf/views.py" />
         <option value="$PROJECT_DIR$/green/cash_flow/cash_flow/views.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
@@ -369,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583969966942</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="True blue green deployment configurations.">
+      <created>1583972574873</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583972574873</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -383,6 +376,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1313" y="25" width="1247" height="1415" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24754901" />
@@ -417,7 +411,8 @@
     <MESSAGE value="Added Kubernetes deployment files, added Jenkinsfile steps for Kubernetes deployment" />
     <MESSAGE value="Created DNS compliant names, implemented blue-green deployment." />
     <MESSAGE value="Fixed port number in load-balancer-service.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed port number in load-balancer-service.json" />
+    <MESSAGE value="True blue green deployment configurations." />
+    <option name="LAST_COMMIT_MESSAGE" value="True blue green deployment configurations." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../part_3/project/github/Jenkinsfile">
@@ -525,10 +520,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="108">
+            <caret line="6" column="93" selection-start-line="6" selection-start-column="93" selection-end-line="6" selection-end-column="93" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        <state relative-caret-position="592">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
         </state>
       </provider>
     </entry>
