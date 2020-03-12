@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b96c12e-3676-4b09-802f-d2ec1a82c21b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/green/cash_flow/cscf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/green/cash_flow/cscf/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,12 +40,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Jenkinsfile" value="1074" />
+          <entry key="Jenkinsfile" value="1112" />
           <entry key="json" value="223" />
           <entry key="md" value="657" />
           <entry key="py" value="194" />
           <entry key="sh" value="13" />
-          <entry key="txt" value="458" />
+          <entry key="txt" value="504" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -54,7 +53,7 @@
           <entry key="Bash" value="13" />
           <entry key="JSON" value="223" />
           <entry key="Markdown" value="657" />
-          <entry key="PLAIN_TEXT" value="1532" />
+          <entry key="PLAIN_TEXT" value="1616" />
           <entry key="Python" value="194" />
         </counts>
       </usages-collector>
@@ -62,11 +61,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="326">
+              <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -80,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/green/cash_flow/cscf/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -208,8 +207,8 @@
         <option value="$PROJECT_DIR$/green/cash_flow/cash_flow/views.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/blue/cash_flow/cscf/views.py" />
-        <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/green/cash_flow/cscf/urls.py" />
+        <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
   </component>
@@ -232,34 +231,6 @@
             <path>
               <item name="web_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_app" type="462c0819:PsiDirectoryNode" />
-              <item name="blue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_app" type="462c0819:PsiDirectoryNode" />
-              <item name="green" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_app" type="462c0819:PsiDirectoryNode" />
-              <item name="green" type="462c0819:PsiDirectoryNode" />
-              <item name="cash_flow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_app" type="462c0819:PsiDirectoryNode" />
-              <item name="green" type="462c0819:PsiDirectoryNode" />
-              <item name="cash_flow" type="462c0819:PsiDirectoryNode" />
-              <item name="cscf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_app" type="462c0819:PsiDirectoryNode" />
-              <item name="kubeconfigs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -412,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583973950344</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Removed unused endpoint in green/">
+      <created>1583974864011</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1583974864011</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -426,6 +404,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1157" y="299" width="1237" height="1059" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958813" />
@@ -463,7 +442,8 @@
     <MESSAGE value="True blue green deployment configurations." />
     <MESSAGE value="Fixed line spacing" />
     <MESSAGE value="Jenkinsfile changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile changes" />
+    <MESSAGE value="Removed unused endpoint in green/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused endpoint in green/" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../part_3/project/github/Jenkinsfile">
@@ -577,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kubeconfigs/django-controller-backup.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -594,10 +567,17 @@
     <entry file="file://$PROJECT_DIR$/green/cash_flow/cscf/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
         </state>
       </provider>
     </entry>

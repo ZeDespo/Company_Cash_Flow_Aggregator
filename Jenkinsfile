@@ -38,7 +38,7 @@ pipeline {
         }
         stage("Switch context") {
             steps {
-                kubectl config use-context arn:aws:eks:us-west-2:929484179881:cluster/capstone-web-app
+                sh "kubectl config use-context arn:aws:eks:us-west-2:929484179881:cluster/capstone-web-app"
             }
         }
     }
