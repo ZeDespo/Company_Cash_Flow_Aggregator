@@ -36,5 +36,10 @@ pipeline {
                 sh "docker rmi $registryGreen:$BUILD_NUMBER"
             }
         }
+        stage("Switch context") {
+            steps {
+                kubectl config use-context arn:aws:eks:us-west-2:929484179881:cluster/capstone-web-app
+            }
+        }
     }
 }
